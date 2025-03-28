@@ -41,6 +41,8 @@ resource "juju_application" "opensearch" {
       error_message = "The main_model should either be null or equal to the model for main orchestrators."
     }
   }
+
+  expose {}
 }
 
 # Deploy the self-signed-certificates operator if main orchestrator
